@@ -1,0 +1,22 @@
+<ActionBar title="Note Detail" icon="" class="action-bar">
+    <ActionItem (tap)="gobacktodetail()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+
+</ActionBar>
+<StackLayout>
+
+    <Label class="gold card" textWrap="true" [text]=" financialyeardesc + ' ' + description"></Label>
+    <!--<Label class="gold card" textWrap="true" [text]="'Account Type: ' + accounttypedesc"></Label>-->
+    <Label class="gold card" textWrap="true" [text]="requestdatetime | date:'medium'"></Label>
+    <!--<Label class="gold card" textWrap="true" [text]="querydate | date:'medium'"></Label>-->
+    <!--<ScrollView>
+        
+    </ScrollView>-->
+<WebView [src]="htmlview"></WebView>
+</StackLayout>
+
+<!--<ScrollView>
+  
+
+</ScrollView>-->

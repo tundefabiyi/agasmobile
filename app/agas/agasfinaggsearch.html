@@ -1,0 +1,46 @@
+<ActionBar title="Report Request" icon="" class="action-bar">
+    <ActionItem (tap)="gotomygiftlist()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+</ActionBar>
+<StackLayout>
+    <ScrollView>
+        <!--<StackLayout>
+           
+            
+
+        </StackLayout>-->
+ <GridLayout columns="auto,*" rows="*, *, *, *" class="form">
+
+                <Label class="gold card" textWrap="false" col="0" text="AccountType"></Label>
+                <DropDown col="1" class="card" #accounttypedd backroundColor="red" [items]="accountTypeValueList" (opened)="accounttypepickeronopen()"
+                    (selectedIndexChanged)="accounttypepickeronchange($event)">
+                </DropDown>
+                <Label class="gold card" row="1" col="0" textWrap="false" text="Period"></Label>
+                <DropDown row="1" col="1" class="card" #financialperioddd backroundColor="red" [items]="financialperiodValueList" (opened)="financialperiodpickeronopen()"
+                    (selectedIndexChanged)="financialperiodpickeronchange($event)">
+                </DropDown>
+                 <Label class="gold card" row="2" col="0" textWrap="false" text="QueryType"></Label>
+                <DropDown row="2" col="1" class="card" #querytypedd backroundColor="red" [items]="querytypeValueList" (opened)="querytypepickeronopen()"
+                    (selectedIndexChanged)="querytypepickeronchange($event)">
+                </DropDown>
+                 <Button row="3"   class="btn btn-primary"   colSpan="2" text="Create Request" (tap)="cretaterequest()"></Button>
+
+            </GridLayout>
+            
+    </ScrollView>
+    <!--<Label class="h2 header" text="Search List"></Label>-->
+    <StackLayout class="card">
+        <ListView [items]="searchrequestlist$ | async" height="300">
+            <template let-item="item">
+                <GridLayout columns="auto,*,auto" rows="auto, *" (tap)="viewDetail(item)">
+                    <!--<Image class="m-5" horizontalAlignment="left" col="0" width="40" height="40" [src]="'~/assets/camera.png'"></Image>-->
+                    <Label class="m-5" row="0" col="1" colSpan="2" [text]='item.param.financialyeardescr'></Label>
+                    <Label class="m-5" row="0" col="2" [text]="item.displaytime | date:'medium'"></Label>
+                    <Label class="m-5 makebold" row="1" col="0" colSpan="2" [text]='item.aGASRequestTypeDescr'></Label>
+
+                </GridLayout>
+            </template>
+        </ListView>
+    </StackLayout>
+</StackLayout>

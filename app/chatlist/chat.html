@@ -1,0 +1,34 @@
+﻿
+<ActionBar [title]="to" icon="" class="action-bar">
+    
+    <ActionItem (tap)="openchatlist()">
+        <Button text="OpenChatList" class="action-item"></Button>
+    </ActionItem>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout>
+        <Label class="gold card" textWrap="true" [text]="to"></Label>
+       
+       
+       
+        <StackLayout class="card">
+            <ListView #listview [items]="chatlist$ | async" height="300">
+                <template let-item="item">
+                    <GridLayout columns="auto,*,auto">
+                        <Image class="m-5" horizontalAlignment="left" col="0" width="40" height="40" [src]="item.sentby == from ? '~/assets/local.png' : '~/assets/remote.png'"></Image>
+                        <Label class="m-5"  col="1" [text]='item.message  '></Label>
+                        <Image *ngIf="item.sentby == from" class="m-5" col="2" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/s' + item.msgstatus + '.png'"></Image>
+                    </GridLayout>
+                </template>
+            </ListView>
+        </StackLayout>
+        <StackLayout class="card">
+            <GridLayout columns="2*,1*" class="form">
+                <TextField class="input input-border" col="0" #gift [(ngModel)]="message"></TextField>
+                <Button class="btn btn-primary" col="1" text="Send" (tap)="sendmsg()"></Button>
+
+            </GridLayout>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

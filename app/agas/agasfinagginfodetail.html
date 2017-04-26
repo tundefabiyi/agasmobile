@@ -1,0 +1,48 @@
+<ActionBar title="Financial Aggregate Item Detail" icon="" class="action-bar">
+    <ActionItem (tap)="gobacktoresultlist()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+</ActionBar>
+<StackLayout class="card">
+    <ScrollView>
+        <GridLayout columns="auto,*" rows="*, *, *, *, *, *, *, *,*" class="card">
+
+            <Label class="gold card" textWrap="false" col="0" text="Period"></Label>
+            <Label class="card" textWrap="false" col="1" [text]="financialyeardesc"></Label>
+            <Label class="gold card" row="1" textWrap="false" col="0" text="Item"></Label>
+            <Label class="card" row="1" textWrap="false" col="1" [text]="description"></Label>
+            <Label class="gold card" row="2" textWrap="false" col="0" text="Balance"></Label>
+            <Label class="card" row="2" textWrap="false" col="1" [text]="currentbalance | number:'.2-2'"></Label>
+            <Label class="gold card" row="3" textWrap="false" col="0" text="Debits"></Label>
+            <Label class="card" row="3" textWrap="false" col="1" [text]="totaldebit | number:'.2-2'"></Label>
+            <Label class="gold card" row="4" textWrap="false" col="0" text="Credits"></Label>
+            <Label class="card" row="4" textWrap="false" col="1" [text]="totalcredit | number:'.2-2'"></Label>
+            <Label class="gold card" row="5" textWrap="false" col="0" text="Budget"></Label>
+            <Label class="card" row="5" textWrap="false" col="1" [text]="finalbudget | number:'.2-2'"></Label>
+            <Label class="gold card" row="6" col="0" textWrap="false" text="Segment Type"></Label>
+            <DropDown row="6" col="1" class="card dropdownlist" #segmenttypedd backroundColor="red" [items]="segmenttypeValueList" (opened)="segmenttypeonopen()"
+                (selectedIndexChanged)="segmenttypeonchange($event)">
+            </DropDown>
+            <Label class="gold card" row="7" col="0" textWrap="false" text="Note Type"></Label>
+            <DropDown row="7" col="1" class="card dropdownlist" #notetypedd backroundColor="red" [items]="querytypeValueList" (opened)="notetypeonopen()"
+                (selectedIndexChanged)="notetypeonchange($event)">
+            </DropDown>
+            <Button row="8" class="btn-primary" col="1" text="Create Note Request" (tap)="createrequest()"></Button>
+
+        </GridLayout>
+
+    </ScrollView>
+    <StackLayout class="card">
+        <ListView [items]="noterequestList" height="400">
+            <template let-item="item">
+                <GridLayout columns="*, *" rows="auto, *" (tap)="viewDetail(item)">
+                    <!--<Image class="m-5" horizontalAlignment="left" col="0" width="40" height="40" [src]="'~/assets/camera.png'"></Image>-->
+                    <Label class="m-5" row="0" col="0"  [text]='item.segmenttypedescr'></Label>
+                    <Label class="m-5" row="0" col="1" [text]="item.datetime | date:'medium'"></Label>
+                    <Label class="m-5 makebold" row="1" col="0" colSpan="2" [text]='item.notetypedescr'></Label>
+
+                </GridLayout>
+            </template>
+        </ListView>
+    </StackLayout>
+</StackLayout>

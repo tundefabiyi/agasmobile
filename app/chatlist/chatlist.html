@@ -1,0 +1,24 @@
+﻿<ActionBar title="My ChatList" icon="" class="action-bar">
+    <ActionItem (tap)="gotomygiftlist()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+    
+</ActionBar>
+
+<ScrollView>
+    <StackLayout>
+       
+        <Label class="h2 header" text="My Chat List"></Label>
+        <StackLayout class="card">
+            <ListView [items]="usernamelist$ | async" height="300">
+                <template let-item="item">
+                    <GridLayout columns="auto,*,auto">
+                      
+                        <Label class="m-5" (tap)="openchat(item.email)" col="0" [text]='item.email'></Label>
+                        <Image class="m-5" col="1" horizontalAlignment="right" width="40" height="40"  [src]="'~/assets/trash.png'"></Image>
+                    </GridLayout>
+                </template>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
