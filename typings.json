@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "debug": "registry:npm/debug#2.0.0+20160723033700",
+    "linq": "registry:npm/linq#3.0.5+20160322032703"
+  }
+}
