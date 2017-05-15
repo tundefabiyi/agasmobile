@@ -1,0 +1,17 @@
+<ActionBar title="GPFS Alert Detail" icon="" class="action-bar">
+    <ActionItem (tap)="openagasalert()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+
+</ActionBar>
+<StackLayout>
+
+    <Label class="gold card" textWrap="true" [text]="name"></Label>
+     <Label class="gold card" textWrap="true" [text]="requiredparam"></Label>
+
+  
+    <Label class="gold card" textWrap="true" [text]="logtime | date:'medium'"></Label>
+  
+<WebView [src]="htmlview"></WebView>
+</StackLayout>
+

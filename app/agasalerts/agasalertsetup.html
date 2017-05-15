@@ -1,0 +1,56 @@
+<ActionBar title="GPFS Alert Setup" icon="" class="action-bar">
+    <ActionItem (tap)="gotoback()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+</ActionBar>
+<StackLayout>
+    <ScrollView>
+        <!--<StackLayout>
+           
+            
+
+        </StackLayout>-->
+        <GridLayout columns="auto,*" rows="*, *, *, *, *, *" class="form">
+
+            <Label class="gold card" textWrap="false" col="0" text="Alert Type"></Label>
+            <DropDown col="1" class="card" #alerttypedd backroundColor="red" [items]="alertTypeValueList" (opened)="ddopen()" (selectedIndexChanged)="alertTypeDDonchange($event) ">
+            </DropDown>
+            <Label class="gold card " row="1 " col="0" textWrap="false " text="CashFlow "></Label>
+            <DropDown row="1 " col="1 " class="card " #cashflowcodesdd backroundColor="red " [items]="cashflowcodesValueList
+                " (opened)="ddopen() " (selectedIndexChanged)="cashflowcodesDDonchange($event) ">
+            </DropDown>
+            <Label class="gold card " row="2 " col="0" textWrap="false " text="Bal. Sheet"></Label>
+            <DropDown row="2 " col="1 " class="card " #balancesheetcodesdd backroundColor="red " [items]="balancesheetcodesValueList
+                " (opened)="ddopen() " (selectedIndexChanged)="balancesheetcodesDDonchange($event) ">
+            </DropDown>
+            <Label class="gold card " row="3 " col="0" textWrap="false " text="PAndL"></Label>
+            <DropDown row="3 " col="1 " class="card " #financialperformancecodesdd backroundColor="red " [items]="financialperformancecodesValueList
+                " (opened)="ddopen() " (selectedIndexChanged)="financialperformancecodesDDonchange($event) ">
+            </DropDown>
+            <Label class="gold card " row="4 " col="0" textWrap="false " text="Limit"></Label>
+           
+              <TextField class="card"  row="4 " col="1"  [(ngModel)]="limit"></TextField>
+
+            <Button row="5 " class="btn btn-primary " colSpan="2 " text="Create Request " (tap)="cretaterequest() "></Button>
+
+        </GridLayout>
+
+    </ScrollView>
+    <!--<Label class="h2 header " text="Search List "></Label>-->
+    <StackLayout class="card ">
+        <ListView [items]="alertequestlist$ | async " height="300 ">
+            <template let-item="item ">
+                <GridLayout columns="auto,* " rows="*, *, *, *" (tap)="viewDetail(item) ">
+                    <!--<Image class="m-5 " horizontalAlignment="left " col="0 " width="40 " height="40 " [src]="
+                '~/assets/camera.png' "></Image>-->
+                    <Label class="m-5 " row="0 " col="0" colSpan="2"  [text]='item.name'></Label>
+                    <Label class="m-5 makebold " row="1 " col="0 " colSpan="2" [text]='item.requiredparam'></Label>
+                    <Label class="m-5 " row="2 " col="0"  [text]="item.logtime | date: 'medium' "></Label>
+                  <Image row="2 " col="1" *ngIf="item.alertdetected == 1" class="m-5" col="2" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/s1.png'"></Image>
+
+
+                </GridLayout>
+            </template>
+        </ListView>
+    </StackLayout>
+</StackLayout>
