@@ -1,0 +1,24 @@
+<GridLayout class="card" columns="auto,* " rows="*, *, *, *, *,*,*">
+    
+    <Label class="m-5 makebold" row="0 " col="0" text="Cash Book"></Label>
+    <Label class="m-5 " row="0 " col="1" [text]='apprequestinfo.cashbookname'></Label>
+    <Label class="m-5 makebold" row="1 " col="0" text="Beneficiary"></Label>
+    <Label class="m-5  " row="1" col="1" [text]='apprequestinfo.supplier' textWrap="true"></Label>
+    <Label class="m-5 makebold" row="2 " col="0" text="Amount"></Label>
+    <Label class="m-5  " row="2" col="1" [text]="apprequestinfo.amount | number:'.2-2'"></Label>
+    <Label class="m-5 makebold" row="3 " col="0" text="Administrative"></Label>
+    <Label class="m-5  " row="3" col="1" [text]="apprequestinfo.admin" textWrap="true"></Label>
+    <Label class="m-5 makebold" row="4 " col="0" text="Request Time"></Label>
+    <Label class="m-5 " row="4" col="1" [text]="apprequestinfo.systemdate | date: 'medium' "></Label>
+    <Label *ngIf="showlogbutton==true" class="m-5 makebold" row="5" col="0" [text]="apprequestinfo.mobileTransApprovalStatusdescription" textWrap="true"></Label>
+    <Image *ngIf="apprequestinfo.mobileTransApprovalStatus==1 && showlogbutton==true" class="m-5" row="5" col="1" horizontalAlignment="right" width="40"
+        height="40" [src]="'~/assets/pending.jpe'"></Image>
+
+    <Image *ngIf="apprequestinfo.mobileTransApprovalStatus==2 && showlogbutton==true" class="m-5" row="5" col="1" horizontalAlignment="right" width="40"
+        height="40" [src]="'~/assets/approved.jpe'"></Image>
+    <Image *ngIf="apprequestinfo.mobileTransApprovalStatus==3 && showlogbutton==true" class="m-5" row="5" col="1" horizontalAlignment="right" width="40"
+        height="40" [src]="'~/assets/notapproved.jpe'"></Image>
+    <Button class="btn btn-primary" row="6" col="1" text="Detail" (tap)="opendetail()"></Button>
+    <Button *ngIf="showlogbutton==true" class="btn btn-reject" row="6" col="0" text="Log" (tap)="openlogdetail()"></Button>
+
+</GridLayout>

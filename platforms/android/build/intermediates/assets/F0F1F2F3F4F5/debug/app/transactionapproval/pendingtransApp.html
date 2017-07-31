@@ -1,0 +1,20 @@
+<StackLayout class="card ">
+    <ListView [items]="pendingtranslist$ | async " >
+        <template let-item="item ">
+            <GridLayout class="card" columns="auto,* " rows="*, *, *, *, *" (tap)="viewDetail(item) ">
+                <!--<Image class="m-5 " horizontalAlignment="left " col="0 " width="40 " height="40 " [src]="
+                '~/assets/camera.png' "></Image>-->
+                <Label class="m-5 " row="0 " col="0" text="Cash Book"></Label>
+                <Label class="m-5 makebold gold" row="0 " col="1" [text]='item.cashbookname'></Label>
+                <Label class="m-5 " row="1 " col="0" text="Beneficiary"></Label>
+                <Label class="m-5 makebold " row="1" col="1" [text]='item.supplier' textWrap="true"></Label>
+                <Label class="m-5 " row="2 " col="0" text="Amount"></Label>
+                <Label class="m-5 makebold gold" row="2" col="1" [text]="item.amount | number:'.2-2'"></Label>
+                <Label class="m-5 " row="3 " col="0" text="Administrative"></Label>
+                <Label class="m-5 makebold " row="3" col="1" [text]="item.admin" textWrap="true"></Label>
+                <Label class="m-5 " row="4 " col="0" text="Request Time"></Label>              
+                <Label class="m-5 " row="4" col="1" [text]="item.systemdate | date: 'medium' "></Label>  
+            </GridLayout>
+        </template>
+    </ListView>
+</StackLayout>

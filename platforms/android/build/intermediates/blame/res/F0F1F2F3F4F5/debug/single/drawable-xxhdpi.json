@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\giftler-master\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5\\debug\\drawable-xxhdpi\\logo.png",
+        "source": "C:\\giftler-master\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "C:\\giftler-master\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5\\debug\\drawable-xxhdpi\\icon.png",
+        "source": "C:\\giftler-master\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\giftler-master\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5\\debug\\drawable-xxhdpi\\background.png",
+        "source": "C:\\giftler-master\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\background.png"
+    }
+]

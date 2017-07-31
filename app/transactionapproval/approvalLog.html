@@ -1,0 +1,7 @@
+<StackLayout class="card ">
+    <ListView [items]="approvalLoglist$ | async " >
+        <template let-item="item ">
+           <approval-request-info [apprequestinfo] = "item"></approval-request-info>
+        </template>
+    </ListView>
+</StackLayout>

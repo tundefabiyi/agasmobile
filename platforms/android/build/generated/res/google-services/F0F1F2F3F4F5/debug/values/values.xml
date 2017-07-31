@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">505975544831-32bjdplpdaibpodq85dpcr2fgnpfgo2k.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://giftler-24670.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">505975544831</string>
+    <string name="google_api_key" translatable="false">AIzaSyABbNiUeDD9rK7Bu9-NFa1JqnLkXFGDgjk</string>
+    <string name="google_app_id" translatable="false">1:505975544831:android:eca4db03c9dbad9c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyABbNiUeDD9rK7Bu9-NFa1JqnLkXFGDgjk</string>
+    <string name="google_storage_bucket" translatable="false">giftler-24670.appspot.com</string>
+</resources>

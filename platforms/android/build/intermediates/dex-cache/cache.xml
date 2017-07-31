@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\Common-2017.1.324-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d9abfb3d9e488a64d5cfe523fdb0cc67caf28c1">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\intermediates-exploded-aar-Common-2017.1.324-dev-release_86f8c2462b773a9802cf73218269545e8928459c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.android.gms-play-services-basement-10.2.1_963d8386adcd22a3d7ca51128ad25bdbc7ca1fe1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-messaging-10.2.1_c94a8d3f96f2df5213762d08924cee50dc3ee07f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.android.support-design-23.4.0_2784c68902de94c3806ea56b71e1cc54f92632c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dbae35d7fc3427d30bef0037bdf61ad0d8d984f8">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-storage-10.2.1_c6e33dad604cb74abbdfc98e09b689bdd65a6ff3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.android.support-appcompat-v7-23.4.0_fd5ba2546c85d1dc72adaa7444c4fbe6f76fa594.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a73b09319cc3945912970487ced4c7724acc97d">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\intermediates-exploded-aar-widgets-release_20ee378e1d466710922536a803d48b3abf37cb66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\Data-2017.1.324-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="757e9792f9a748039f62743c18d073fd33b59c65">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\intermediates-exploded-aar-Data-2017.1.324-dev-release_5ee7acb2596000b8744a5049101db7e7d75db400.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-common-10.2.1_8ea9d8fcd7dbfe43f971b8b07dc3d500a7808049.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.android.support-support-v4-24.0.0_ed356e192b8a942999180d606c5db37f1aa6026c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\giftler\runtime\unspecified\jars\libs\binding-generator.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e74f5f1ebe12c7cfa6591158ef298c95a5275f">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\binding-generator_1e30dbbda35386a4e64d7de15810d310322e3548.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\FABSON TUNDE\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\gson-2.8.0_ec1a3cdc47ee4ce1097c5913a6b4a5f737ffa4ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\firebase-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9516c20ad330d844b3275d9c3acb0b798b6d8ae">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\intermediates-exploded-aar-firebase-release_866beca31487e3b72fa717a5f9d21abf0ed1d364.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-analytics-10.2.1_46b19c80b51f51e16a24d1341063126340fca3d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-auth-10.2.1_a15d4e43619a08fde4142ab75dd2eca275f71c76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.android.support-support-vector-drawable-23.4.0_123f374dd5ca93cd8939a8913825a003e1399e8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\List-2017.1.324-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0bcae1c3f380680addf84f8da920217e2daa92ed">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\intermediates-exploded-aar-List-2017.1.324-dev-release_a77e2bfb313652965e2b2dcc3a0c802bdceb3aa5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\FABSON TUNDE\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\support-annotations-24.0.0_8b83940286e6cfa39f0a9f6aa2db53cdb336459b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.android.gms-play-services-tasks-10.2.1_89adb261b97f3fbf193b9526c7f07ced09a971e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb004ea36f8802bad30000e286c177691740a322">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-config-10.2.1_c744d2d6bdf9d9e1d4e0561aba4fd43a7785c0ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\node_modules\nativescript-local-notifications\platforms\android\libs\localnotlib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4d132bb5ff6e3d3a4d8e708448649ff6e3e76fc">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\localnotlib_d64702d1de1dedc6644c976463b3aa546697d78e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\giftler\runtime\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e45d63bd91f9a51a9e6f9c96be7a01deb415690">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\giftler-runtime-unspecified_95ebb159ef5fcc636f1387bdf76f0536dd5ac351.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\Primitives-2017.1.324-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bd19a7b3c1e195aec235623546c9e26257308c9">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\intermediates-exploded-aar-Primitives-2017.1.324-dev-release_6f1268da28b223ece84c029ee8412befb5e883fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44098e691b36776973374ac03afe0225b17f8a74">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-storage-common-10.2.1_1f8a50a7f2f9834718c4f36f1de214cdfb758c46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.android.support-animated-vector-drawable-23.4.0_e0f3c52e645b97a0f2765f6efb6de2259ce07501.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-iid-10.2.1_84d97e03b293a5fe7f23bd9067274cae4fa92c68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-database-10.2.1_9a69d24094306e2fba51227a0c28e22452f4d68e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\internal_impl-24.0.0_8f361f0616ef72996270a118ebec8edc8b18f681.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-analytics-impl-10.2.1_dd54ba523fa284d4310496aaa69b53d6ac4ab00c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.firebase-firebase-database-connection-10.2.1_844c322de43ff7b7bad3815638b5e75021e07dcc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.android.support-recyclerview-v7-23.4.0_94c96476ec08b422391d1ad61486e6032017228a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\giftler-master\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\giftler-master\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5\debug\com.google.android.gms-play-services-base-10.2.1_33fe810131db72e098ddd9ae8116c4db8f645cb9.jar" />
+    </item>
+
+</items>

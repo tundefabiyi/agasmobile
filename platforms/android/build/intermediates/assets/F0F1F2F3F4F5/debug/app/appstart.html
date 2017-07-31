@@ -1,0 +1,53 @@
+<ActionBar [title]="pagetitle" class="action-bar">
+   
+    <ActionItem text="Menu" (tap)="toggledrawer()" ios.systemIcon="9" ios.position="left" android.systemIcon="ic_menu_share" android.position="popup">
+        <!--<Button text="Menu" class="action-item"></Button>-->
+    </ActionItem>
+    <ActionItem *ngIf="showgobackbutton" (tap)="goback()">
+        <Button text="GoBack" class="action-item"></Button>
+    </ActionItem>
+</ActionBar>
+<RadSideDrawer #drawer drawerTransition="PushTransition">
+    <StackLayout tkDrawerContent class=" card">
+        <StackLayout class=" card">
+            <Label text="Menu"></Label>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout *ngIf="loggedin" class="sideStackLayout">
+
+
+                <GridLayout columns="auto, *" rows="*" (tap)="openfinaggsearch()">
+                    <Image class="m-5" col="0" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/search.jpe'"></Image>
+
+                    <Label text="GPFS Search" col="1" class="sideLabel"></Label>
+
+                </GridLayout>
+
+                <GridLayout columns="auto, *" rows="*" (tap)="openagasalertview()">
+                    <Label col="1" text="GPFS Alerts" class="sideLabel"></Label>
+                    <Image class="m-5" col="0" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/alert.png'"></Image>
+
+                </GridLayout>
+                 <GridLayout columns="auto, *" rows="*" (tap)="openpendingapprovalsview()">
+                    <Label col="1" text="Pending Approvals" class="sideLabel"></Label>
+                    <Image class="m-5" col="0" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/pendingapp.jpe'"></Image>
+
+                </GridLayout>
+                <GridLayout columns="auto, *" rows="*" (tap)="openchatlist()">
+                    <Label col="1" text="Chat" class="sideLabel"></Label>
+                    <Image class="m-5" col="0" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/chat.jpe'"></Image>
+
+                </GridLayout>
+                <GridLayout columns="auto, *" rows="*" (tap)="logout()">
+                    <Label col="1" text="Log Out" class="sideLabel"></Label>
+                    <Image class="m-5" col="0" horizontalAlignment="right" width="40" height="40" [src]="'~/assets/logout.jpe'"></Image>
+
+                </GridLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+    <StackLayout tkMainContent class="mainContent">
+
+        <router-outlet></router-outlet>
+    </StackLayout>
+</RadSideDrawer>

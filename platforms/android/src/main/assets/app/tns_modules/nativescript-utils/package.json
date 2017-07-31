@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-utils@^1.0.37",
+        "scope": null,
+        "escapedName": "nativescript-utils",
+        "name": "nativescript-utils",
+        "rawSpec": "^1.0.37",
+        "spec": ">=1.0.37 <2.0.0",
+        "type": "range"
+      },
+      "C:\\giftler-master"
+    ]
+  ],
+  "_from": "nativescript-utils@>=1.0.37 <2.0.0",
+  "_id": "nativescript-utils@1.0.41",
+  "_inCache": true,
+  "_location": "/nativescript-utils",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-utils-1.0.41.tgz_1493888908614_0.49380287737585604"
+  },
+  "_npmUser": {
+    "name": "nicoleza",
+    "email": "nicole.orpen@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-utils@^1.0.37",
+    "scope": null,
+    "escapedName": "nativescript-utils",
+    "name": "nativescript-utils",
+    "rawSpec": "^1.0.37",
+    "spec": ">=1.0.37 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-utils/-/nativescript-utils-1.0.41.tgz",
+  "_shasum": "3c917ab8add637b53979df7d386eb20f979fe767",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-utils@^1.0.37",
+  "_where": "C:\\giftler-master",
+  "author": {
+    "name": "Nicole Orpen",
+    "email": "nicole.orpen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nicoleza/nativescript-utils/issues"
+  },
+  "dependencies": {
+    "moment": "^2.13.0",
+    "nativescript-email": "^1.4.0",
+    "nativescript-phone": "^1.2.4",
+    "sf": "^0.1.8"
+  },
+  "description": "Useful collection of functions",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "3c917ab8add637b53979df7d386eb20f979fe767",
+    "tarball": "https://registry.npmjs.org/nativescript-utils/-/nativescript-utils-1.0.41.tgz"
+  },
+  "gitHead": "834f05c50b836e3f34fe85877f0451b843f55810",
+  "homepage": "https://github.com/nicoleza/nativescript-utils#readme",
+  "keywords": [
+    "nativescript utils"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "nicoleza",
+      "email": "nicole.orpen@gmail.com"
+    }
+  ],
+  "name": "nativescript-utils",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoleza/nativescript-utils.git"
+  },
+  "scripts": {},
+  "version": "1.0.41"
+}

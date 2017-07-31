@@ -1,0 +1,53 @@
+<ScrollView>
+    <StackLayout class="card">
+        <GridLayout class="card" columns="auto,* " rows="*, *, *, *, *,*, *, *, *, *,*, *,*,*,*,*,*,*">
+            <!--<Label class="m-5 " row="0 " col="0" text="Cash Book"></Label>-->
+            <Label class="m-5 makebold gold" row="0 " col="1" text="Payment Details"></Label>
+            <Label class="m-5 makebold" row="1 " col="0" text="Beneficiary"></Label>
+            <Label class="m-5  " row="1" col="1" [text]='supplier' textWrap="true"></Label>
+            <Label class="m-5 makebold" row="2 " col="0" text="Amount"></Label>
+            <Label class="m-5 " row="2" col="1" [text]="amount | number:'.2-2'"></Label>
+            <Label class="m-5 makebold " row="3 " col="0" text="Cash Book"></Label>
+            <Label class="m-5 " row="3" col="1" [text]="cashbookname" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="4 " col="0" text="Remarks"></Label>
+            <Label class="m-5 " row="4" col="1" [text]="remarks" textWrap="true"></Label>
+            <Label class="m-5 makebold" row="5 " col="0" text="Transaction Date"></Label>
+            <Label class="m-5 " row="5" col="1" [text]="refdate | date: 'medium' "></Label>
+            <Label class="m-5 makebold gold" row="6 " col="1" text="Ledger Details"></Label>
+            <Label class="m-5 makebold " row="7 " col="0" text="Admin"></Label>
+            <Label class="m-5 " row="7" col="1" [text]="admin" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="8 " col="0" text="Economic"></Label>
+            <Label class="m-5 " row="8" col="1" [text]="economic" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="9 " col="0" text="Fund"></Label>
+            <Label class="m-5 " row="9" col="1" [text]="fund" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="10 " col="0" text="Function"></Label>
+            <Label class="m-5 " row="10" col="1" [text]="functional" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="11 " col="0" text="Programme"></Label>
+            <Label class="m-5 " row="11" col="1" [text]="programme" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="12 " col="0" text="Geo"></Label>
+            <Label class="m-5 " row="12" col="1" [text]="geo" textWrap="true"></Label>
+            <Label class="m-5 makebold gold" row="13 " col="1" text="Approval Status"></Label>
+            <Label class="m-5 makebold" row="14" col="0" [text]="mobileTransApprovalStatusdescription" textWrap="true"></Label>
+            <Image *ngIf="mobileTransApprovalStatus==1" class="m-5" row="14" col="1" horizontalAlignment="right" width="40" height="40"
+                [src]="'~/assets/pending.jpe'"></Image>
+
+            <Image *ngIf="mobileTransApprovalStatus==2" class="m-5" row="14" col="1" horizontalAlignment="right" width="40" height="40"
+                [src]="'~/assets/approved.jpe'"></Image>
+            <Image *ngIf="mobileTransApprovalStatus==3" class="m-5" row="14" col="1" horizontalAlignment="right" width="40" height="40"
+                [src]="'~/assets/notapproved.jpe'"></Image>
+            <Label class="m-5 makebold " row="15 " col="0" text="Approval Remarks"></Label>
+            <Label class="m-5 " row="15" col="1" [text]="approvalremarks" textWrap="true"></Label>
+            <Label class="m-5 makebold " row="16 " col="0" text="Approval Date"></Label>
+            <Label *ngIf="mobileTransApprovalStatus!=1" class="m-5 " row="16" col="1" [text]="approvaldate | date: 'medium' "></Label>
+        </GridLayout>
+        <StackLayout *ngIf="mobileTransApprovalStatus==1" class="card">
+            <GridLayout columns="*,*" rows="*,*" class="form">
+                <TextView  class="input input-border" col="0" textWrap="true" colspan="2" [(ngModel)]="approvalremarks"></TextView >
+                <Button class="btn btn-primary" row="1" col="1" text="Approve" (tap)="approve()"></Button>
+                <Button class="btn btn-reject" row="1" col="0" text="Not Approved" (tap)="notapproved()"></Button>
+
+            </GridLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ScrollView>

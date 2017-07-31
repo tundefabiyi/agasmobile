@@ -1,0 +1,31 @@
+<StackLayout class="card ">
+    <ScrollView>
+    <approval-request-info [showlogbutton]="false" [apprequestinfo]="requestobj"></approval-request-info>
+    </ScrollView>
+    <StackLayout class="card ">
+        <ListView [items]="apploglist$ | async" height="400">
+            <template let-item="item ">
+                <GridLayout columns="auto,* " rows="*, *, *, *"  >
+                    <!--<Image class="m-5 " horizontalAlignment="left " col="0 " width="40 " height="40 " [src]="
+                '~/assets/camera.png' "></Image>-->
+                    <Label class="m-5 h3" horizontalAlignment="center" row="0 " col="0" colSpan="2" [text]='item.mobile_user_email'></Label>
+                    <Label class="m-5 makebold" row="1 " col="0" text="Approval Remarks"></Label>
+                    <Label class="m-5  " row="1 " col="1 " [text]='item.approvalremarks' textWrap="true"></Label>
+                    <Label class="m-5 makebold" row="2 " col="0" text="Approval Date"></Label>
+                    <Label *ngIf="item.mobileTransApprovalStatus!=1" class="m-5 " row="2 " col="1" [text]="item.approvaldate | date: 'medium' "></Label>
+
+                    <Label class="m-5 makebold" row="3" col="0" [text]="item.mobileTransApprovalStatusdescription" textWrap="true"></Label>
+                    <Image *ngIf="item.mobileTransApprovalStatus==1" class="m-5" row="3" col="1" horizontalAlignment="right" width="40" height="40"
+                        [src]="'~/assets/pending.jpe'"></Image>
+
+                    <Image *ngIf="item.mobileTransApprovalStatus==2" class="m-5" row="3" col="1" horizontalAlignment="right" width="40" height="40"
+                        [src]="'~/assets/approved.jpe'"></Image>
+                    <Image *ngIf="item.mobileTransApprovalStatus==3" class="m-5" row="3" col="1" horizontalAlignment="right" width="40" height="40"
+                        [src]="'~/assets/notapproved.jpe'"></Image>
+
+
+                </GridLayout>
+            </template>
+        </ListView>
+    </StackLayout>
+</StackLayout>
